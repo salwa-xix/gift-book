@@ -48,7 +48,16 @@
       padding: 30px 20px 80px;
       overflow-y: auto;
       background: white;
-      border-right: 12px solid #e0e0e0;
+
+  border-right: 12px solid;
+  border-image: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #319a84 50%,
+    #3587b9 100%
+  ) 1;
+  animation: borderShift 6s infinite linear;
+
       text-align: center;
       display: flex;
       flex-direction: column;
