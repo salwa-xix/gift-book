@@ -190,6 +190,31 @@
       border-radius: 6px;
     }
     }
+
+
+    .certificate-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: white;
+  color: #319a84;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-btn:hover {
+  transform: translateX(50%) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
   </style>
 
 </head>
@@ -229,12 +254,17 @@
   <!-- محتوى الغلاف -->
   <div class="header" style="position: relative; z-index: 1;">
     <img src="ba.jpg" alt="المقدم">
-    <h1 style="font-size: 30px;"> ورشة النجاح المالي</h1>
-  <p style="font-size: 18px;">تقديم الخبير والمستشار <strong>د. سالم باشميل</strong></p>
-  <p class="paragraph" style="max-width: 520px; margin: 20px auto; color: #f0f0f0;">
-نُهدي هذا الكتيّب للدكتور سالم باشميل، تقديرًا لمساهمته القيّمة في ورشة النجاح المالي
-  </p>
-  </div>
+<h1 style="font-size: 30px;">ورشة النجاح المالي</h1>
+<p style="font-size: 18px;">تقديم الخبير والمستشار <strong>د. سالم باشميل</strong></p>
+<p class="paragraph" style="max-width: 520px; margin: 20px auto; color: #f0f0f0;">
+نُهدي هذا الكتيّب للدكتور سالم باشميل، تقديرًا لمساهمته القيّمة في ورشة النجاح المالي.  
+<br><br>
+📄 كما يمكنكم استعراض <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
+</p>
+
+  <!-- زر شهادة شكر وتقدير -->
+<a href="رابط_الشهادة.pdf" class="certificate-btn" target="_blank" rel="noopener">شهادة شكر وتقدير</a>
+
 
   <div class="page-number" style="position: relative; z-index: 1;">
     <span class="slogan">حيث تبصر الأفكار واقعها✧ </span><br>
