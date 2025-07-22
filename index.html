@@ -191,8 +191,7 @@
     }
     }
 
-
-  .certificate-btn {
+.certificate-btn {
   position: absolute;
   bottom: 60px;
   right: 50%;
@@ -213,12 +212,21 @@
   justify-content: center;
   transition: all 0.3s ease;
   font-family: 'Cairo', sans-serif;
+  white-space: nowrap;
 }
 
 .certificate-btn:hover {
   transform: translateX(50%) scale(1.05);
   background-color: #f5f5f5;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .certificate-btn {
+    font-size: 15px;
+    padding: 12px 20px;
+    bottom: 50px;
+  }
 }
 
 
@@ -278,7 +286,7 @@
   <p class="paragraph" style="max-width: 520px; margin: 20px auto; color: #f0f0f0;">
     نُهدي هذا الكتيّب للدكتور سالم باشميل، تقديرًا لمساهمته القيّمة في ورشة النجاح المالي.  
     <br><br>
-    📄 كما يمكنكم استعراض <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
+     كما يمكنكم استعراض <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
   </p>
 </div> <!-- ← نهاية الـ header -->
 
