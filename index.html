@@ -192,28 +192,45 @@
     }
 
 
-    .certificate-btn {
+  .certificate-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   right: 50%;
   transform: translateX(50%);
-  background-color: white;
+  background-color: #ffffff;
   color: #319a84;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 14px 28px;
   border: none;
-  border-radius: 30px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: 'Cairo', sans-serif;
 }
 
 .certificate-btn:hover {
   transform: translateX(50%) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
+
+    .slogan-text {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 1;
+  text-align: center;
+}
+
 
   </style>
 
@@ -253,6 +270,7 @@
 
   <!-- محتوى الغلاف -->
  <!-- محتوى الغلاف -->
+<!-- محتوى الغلاف -->
 <div class="header" style="position: relative; z-index: 1;">
   <img src="ba.jpg" alt="المقدم">
   <h1 style="font-size: 30px;">ورشة النجاح المالي</h1>
@@ -260,17 +278,20 @@
   <p class="paragraph" style="max-width: 520px; margin: 20px auto; color: #f0f0f0;">
     نُهدي هذا الكتيّب للدكتور سالم باشميل، تقديرًا لمساهمته القيّمة في ورشة النجاح المالي.  
     <br><br>
-     كما يمكنكم استعراض <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.📄
+    📄 كما يمكنكم استعراض <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
   </p>
 </div> <!-- ← نهاية الـ header -->
 
-<!-- الزر يظهر بأسفل الصفحة -->
-<a href="certificate.pdf" class="certificate-btn" target="_blank" rel="noopener">شهادة شكر وتقدير</a>
+<!-- زر شهادة الشكر -->
+<a href="certificate.pdf" class="certificate-btn" target="_blank" rel="noopener">
+  <i class="fas fa-award" style="margin-left: 8px;"></i> شهادة شكر وتقدير
+</a>
 
-<!-- الشعار في الأسفل -->
-<div class="page-number" style="position: relative; z-index: 1;">
-  <span class="slogan">حيث تبصر الأفكار واقعها✧ </span><br>
+<!-- الشعار تحت الزر -->
+<div class="page-number slogan-text">
+  <span class="slogan">حيث تبصر الأفكار واقعها✧</span>
 </div>
+
 
 
 <!-- صفحة الشكر مع أمواج -->
