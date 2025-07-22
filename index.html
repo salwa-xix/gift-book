@@ -196,23 +196,26 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  color: #319a84;
+  color: #3587b9; 
   font-size: 16px;
   font-weight: 600;
   padding: 12px 24px;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(49, 154, 132, 0.15); 
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
   font-family: 'Cairo', sans-serif;
+  white-space: nowrap;
 }
 
 .certificate-btn-inline:hover {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(53, 135, 185, 0.2);
 }
+
 
 
 @media (max-width: 600px) {
@@ -285,12 +288,12 @@
 </div> <!-- ← نهاية الـ header -->
 
 <!-- زر شهادة الشكر -->
-<a href="certificate.pdf" class="certificate-btn" target="_blank" rel="noopener">
+<a href="certificate.pdf" class="certificate-btn-inline" target="_blank" rel="noopener">
   <i class="fas fa-award" style="margin-left: 8px;"></i> شهادة شكر وتقدير
 </a>
 
 <!-- الشعار تحت الزر -->
-<div class="page-number slogan-text">
+<div class="page-number" style="margin-top: 15px;">
   <span class="slogan">حيث تبصر الأفكار واقعها✧</span>
 </div>
 
