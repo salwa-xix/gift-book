@@ -295,9 +295,21 @@
      كما يمكنكم تحميل <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
   </p>
 
-<a href="د.سالم-باشميل.pdf" class="certificate-btn-inline" onclick="downloadPDF()">
-  <i class="fas fa-award" style="margin-left: 8px;"></i>  شهادة شكر وتقدير
+<a href="#" class="certificate-btn-inline" onclick="downloadPDF()">
+  <i class="fas fa-award" style="margin-left: 8px;"></i> شهادة شكر وتقدير
 </a>
+
+<script>
+  function downloadPDF() {
+    const link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/USERNAME/REPO/main/د.سالم-باشميل.pdf';
+    link.setAttribute('download', 'د.سالم-باشميل.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
     <p class="paragraph" style="max-width: 520px; margin: 20px auto; color: #f0f0f0;">
 حيث تبصر الأفكار واقعها✧  </p>
 </div> 
