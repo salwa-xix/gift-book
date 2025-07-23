@@ -295,30 +295,9 @@
      كما يمكنكم تحميل <strong>شهادة الشكر والتقدير</strong> من خلال الزر المرفق أدناه.
   </p>
 
-<button class="certificate-btn-inline" onclick="downloadAsPDF()">
-  <i class="fas fa-file-pdf" style="margin-left: 8px;"></i>  شهادة الشكر والتقدير 
-</button>
-
-
-<script>
-  async function downloadAsPDF() {
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF();
-
-    // حملي الصورة
-    const imgUrl = 'certificate.jpg'; // استبدليها باسم الصورة
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.src = imgUrl;
-
-    img.onload = function () {
-      const imgWidth = 190; // عرض الصورة في PDF
-      const imgHeight = (img.height * imgWidth) / img.width;
-      pdf.addImage(img, 'JPEG', 10, 10, imgWidth, imgHeight);
-      pdf.save('certificate.pdf');
-    };
-  }
-</script>
+<a href="د.سالم-باشميل.pdf" class="certificate-btn-inline" onclick="downloadPDF()">
+  <i class="fas fa-award" style="margin-left: 8px;"></i>  شهادة شكر وتقدير
+</a>
 
 
 
